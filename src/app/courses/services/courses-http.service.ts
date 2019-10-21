@@ -40,9 +40,8 @@ export class CoursesHttpService {
     }
 
 
-    saveCourse(courseId: number | string, changes: Partial<Course>) {
+   
+    saveCourse(courseId: string | number, changes: Partial<Course>) {
         return this.http.put('/api/course/' + courseId, changes);
     }
-
-
 }
